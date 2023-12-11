@@ -1,6 +1,13 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, node: true },
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -8,7 +15,6 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:@typescript-eslint/recommended',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'import'],
   rules: {
@@ -25,6 +31,9 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
   },
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       alias: {
         map: [['@', './src']],
@@ -32,7 +41,7 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ['dist', '.eslintrc.cjs', '*.html'],
+  ignorePatterns: ['*.html', '*.cy.js', '*.cy.ts', '*.css'],
 }
 
 /**

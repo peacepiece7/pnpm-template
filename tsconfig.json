@@ -13,5 +13,5 @@
     "strict": true,
     "sourceMap": true
   },
-  "exclude": ["**/dist/*", "**/esm/*"]
+  "exclude": ["**/dist/*", "**/esm/*", "**/node_modules/*", "**/coverage/*"]
 }

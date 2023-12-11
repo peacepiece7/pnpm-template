@@ -1,10 +1,10 @@
 import { defineConfig } from 'cypress'
+import '@testing-library/cypress'
 
 export default defineConfig({
   e2e: {
+    baseUrl: 'http://localhost:5173',
     setupNodeEvents(on, config) {
-      console.log('CYPRESS ON :', on)
-      console.log('CYPRESS CONFIG :', config)
       return config
     },
   },
