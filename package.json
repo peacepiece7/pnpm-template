@@ -8,12 +8,22 @@
     "shared": "pnpm -F @monorepo/shared",
     "front": "pnpm -F @monorepo/front",
     "back": "pnpm -F @monorepo/back",
+    "rt": "pnpm -F @monorepo/react-tdd",
+    "typecheck:all": "pnpm --if-present --recursive typecheck",
+    "lint:all": "pnpm --if-present --recursive lint",
+    "test:all": "pnpm -r test",
     "dev": "pnpm -r dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "peacepiece7",
   "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.2"
+  },
   "devDependencies": {
+    "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
@@ -29,21 +39,12 @@
     "prettier": "^3.1.1",
     "typescript": "^5.3.3"
   },
-  "dependencies": {
-    "@types/react": "^18.2.43",
-    "npm": "^10.2.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ts-node": "^10.9.2"
-  },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.{ts,tsx}": [
-      "eslint --fix",
-      "git add"
+      "pnpm lint:all"
     ]
   },
   "workspaces": [

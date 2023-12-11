@@ -10,8 +10,9 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'import'],
   rules: {
+    'import/no-unresolved': 'off', // /public 경로를 인식하지 못하는 문제가 있어서 off, import 경로는 ts에서 확인합니다.
     'import/order': getImportOrderRules(),
     'react-refresh/only-export-components': [
       'warn',
@@ -29,11 +30,8 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [
-          ['@', './src'],
-          ['', './public'],
-        ],
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+        map: [['@', './src']],
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
       },
     },
   },
