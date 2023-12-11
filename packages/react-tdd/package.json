@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx,js,jsx",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc -p ./tsconfig.json --noEmit",
     "test": "jest",
     "test:w": "jest --watch",
     "test:v": "jest --verbose",
