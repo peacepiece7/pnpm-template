@@ -1,0 +1,25 @@
+{
+  "name": "@monorepo/react-tdd",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:w": "jest --watch",
+    "test:v": "jest --verbose"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "vite": "^5.0.0",
+    "vite-tsconfig-paths": "^4.2.2"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "timeago.js": "^4.0.2"
+  }
+}
