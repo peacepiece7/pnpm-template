@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1702293113803" clover="3.2.0">
-  <project timestamp="1702293113803" name="All files">
-    <metrics statements="296" coveredstatements="296" conditionals="34" coveredconditionals="33" methods="18" coveredmethods="18" elements="348" coveredelements="347" complexity="0" loc="296" ncloc="296" packages="5" files="11" classes="11"/>
+<coverage generated="1702313802462" clover="3.2.0">
+  <project timestamp="1702313802463" name="All files">
+    <metrics statements="289" coveredstatements="289" conditionals="35" coveredconditionals="34" methods="18" coveredmethods="18" elements="342" coveredelements="341" complexity="0" loc="289" ncloc="289" packages="5" files="11" classes="11"/>
     <package name="components">
-      <metrics statements="124" coveredstatements="124" conditionals="20" coveredconditionals="20" methods="9" coveredmethods="9"/>
+      <metrics statements="120" coveredstatements="120" conditionals="20" coveredconditionals="20" methods="9" coveredmethods="9"/>
       <file name="ChannelInfo.tsx" path="C:\Users\peace\source\peacepiece\pnpm-template\packages\react-tdd\src\components\ChannelInfo.tsx">
         <metrics statements="21" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
@@ -104,7 +104,7 @@
         <line num="37" count="17" type="stmt"/>
       </file>
       <file name="VideoCard.tsx" path="C:\Users\peace\source\peacepiece\pnpm-template\packages\react-tdd\src\components\VideoCard.tsx">
-        <metrics statements="34" coveredstatements="34" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <metrics statements="30" coveredstatements="30" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -126,8 +126,8 @@
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="10" type="stmt"/>
         <line num="21" count="10" type="stmt"/>
-        <line num="22" count="10" type="stmt"/>
-        <line num="23" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="10" type="stmt"/>
         <line num="24" count="10" type="stmt"/>
         <line num="25" count="10" type="stmt"/>
         <line num="26" count="10" type="stmt"/>
@@ -135,10 +135,6 @@
         <line num="28" count="10" type="stmt"/>
         <line num="29" count="10" type="stmt"/>
         <line num="30" count="10" type="stmt"/>
-        <line num="31" count="10" type="stmt"/>
-        <line num="32" count="10" type="stmt"/>
-        <line num="33" count="10" type="stmt"/>
-        <line num="34" count="10" type="stmt"/>
       </file>
     </package>
     <package name="context">
@@ -157,7 +153,7 @@
       </file>
     </package>
     <package name="pages">
-      <metrics statements="68" coveredstatements="68" conditionals="9" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <metrics statements="68" coveredstatements="68" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
       <file name="NotFound.tsx" path="C:\Users\peace\source\peacepiece\pnpm-template\packages\react-tdd\src\pages\NotFound.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="cond" truecount="1" falsecount="0"/>
@@ -201,7 +197,7 @@
         <line num="33" count="1" type="stmt"/>
       </file>
       <file name="Videos.tsx" path="C:\Users\peace\source\peacepiece\pnpm-template\packages\react-tdd\src\pages\Videos.tsx">
-        <metrics statements="32" coveredstatements="32" conditionals="7" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <metrics statements="32" coveredstatements="32" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -216,7 +212,7 @@
         <line num="12" count="5" type="stmt"/>
         <line num="13" count="5" type="stmt"/>
         <line num="14" count="5" type="stmt"/>
-        <line num="15" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="5" type="cond" truecount="3" falsecount="0"/>
         <line num="16" count="5" type="stmt"/>
         <line num="17" count="5" type="stmt"/>
         <line num="18" count="5" type="stmt"/>
@@ -237,9 +233,9 @@
       </file>
     </package>
     <package name="tests">
-      <metrics statements="87" coveredstatements="87" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <metrics statements="84" coveredstatements="84" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
       <file name="utils.tsx" path="C:\Users\peace\source\peacepiece\pnpm-template\packages\react-tdd\src\tests\utils.tsx">
-        <metrics statements="42" coveredstatements="42" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <metrics statements="39" coveredstatements="39" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -260,28 +256,25 @@
         <line num="18" count="18" type="stmt"/>
         <line num="19" count="18" type="stmt"/>
         <line num="20" count="18" type="stmt"/>
-        <line num="21" count="18" type="stmt"/>
-        <line num="22" count="18" type="stmt"/>
-        <line num="23" count="18" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="24" count="9" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
         <line num="26" count="9" type="stmt"/>
         <line num="27" count="9" type="stmt"/>
         <line num="28" count="9" type="stmt"/>
         <line num="29" count="9" type="stmt"/>
-        <line num="30" count="9" type="stmt"/>
-        <line num="31" count="9" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="9" type="cond" truecount="1" falsecount="0"/>
         <line num="32" count="9" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="34" count="9" type="stmt"/>
         <line num="35" count="9" type="stmt"/>
         <line num="36" count="9" type="stmt"/>
         <line num="37" count="9" type="stmt"/>
         <line num="38" count="9" type="stmt"/>
         <line num="39" count="9" type="stmt"/>
-        <line num="40" count="9" type="stmt"/>
-        <line num="41" count="9" type="stmt"/>
-        <line num="42" count="9" type="stmt"/>
       </file>
       <file name="videos.tsx" path="C:\Users\peace\source\peacepiece\pnpm-template\packages\react-tdd\src\tests\videos.tsx">
         <metrics statements="45" coveredstatements="45" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

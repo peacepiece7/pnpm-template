@@ -14,10 +14,7 @@ module.exports = {
   rules: {
     'import/no-unresolved': 'off', // /public 경로를 인식하지 못하는 문제가 있어서 off, import 경로는 ts에서 확인합니다.
     'import/order': getImportOrderRules(),
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/self-closing-comp': [
       'error',
       {
@@ -35,6 +32,7 @@ module.exports = {
       },
     },
   },
+  ignorePatterns: ['dist', '.eslintrc.cjs', '*.html'],
 }
 
 /**
@@ -45,17 +43,7 @@ function getImportOrderRules() {
   return [
     'error',
     {
-      groups: [
-        'type',
-        'builtin',
-        'external',
-        'internal',
-        'parent',
-        'sibling',
-        'index',
-        'object',
-        'unknown',
-      ],
+      groups: ['type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'unknown'],
       pathGroups: [
         {
           pattern: '@/react*',

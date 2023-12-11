@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "jest",
     "test:w": "jest --watch",
-    "test:v": "jest --verbose"
+    "test:v": "jest --verbose",
+    "cy:open": "cypress open"
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.5.0",

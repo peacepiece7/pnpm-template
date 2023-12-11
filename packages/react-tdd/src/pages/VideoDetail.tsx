@@ -1,13 +1,13 @@
-import ChannelInfo from "@components/ChannelInfo";
-import RelatedVideos from "@components/RelatedVideos";
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
+import ChannelInfo from '@/components/ChannelInfo'
+import RelatedVideos from '@/components/RelatedVideos'
 
 export default function VideoDetail() {
   // !BUG : navigate의 state로 상태를 전달하기 떄문에 detail 페이지로 direct 접근시 에러 발생!
   const {
     state: { video },
-  } = useLocation();
-  const { title, channelId, channelTitle, description } = video.snippet;
+  } = useLocation()
+  const { title, channelId, channelTitle, description } = video.snippet
   return (
     <section className="flex flex-col lg:flex-row">
       <article className="basis-4/6">
@@ -29,5 +29,5 @@ export default function VideoDetail() {
         <RelatedVideos id={video.id} />
       </section>
     </section>
-  );
+  )
 }

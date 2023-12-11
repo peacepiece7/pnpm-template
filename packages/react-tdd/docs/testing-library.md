@@ -1,6 +1,6 @@
 # 설치
 
-`pnpm i -w -D @testing-library/jest-dom @testing-library/react @testing-library/user-event jest-environment-jsdom jest-preview react-test-renderer @types/react-test-renderer`
+`pnpm i -w -D @testing-library/jest-dom @testing-library/react @/testing-library/user-event jest-environment-jsdom jest-preview react-test-renderer @types/react-test-renderer`
 
 ### @testing-library/jest-dom
 
@@ -20,7 +20,7 @@ import { render, screen, waitFor } from '@testing-library/react'
 expect(screen.getByDisplayValue('bts')).toBeInTheDocument()
 ```
 
-### @testing-library/user-event
+### @/testing-library/user-event
 
 - 사용자 이벤트를 테스트하기 위한 도구
 

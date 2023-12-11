@@ -1,9 +1,9 @@
-import SearchHeader from "@components/SearchHeader.tsx";
-import { YoutubeApiProvider } from "@context/youtubeProvider.tsx";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Outlet } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { Outlet } from 'react-router-dom'
+import { YoutubeApiProvider } from '@/context/youtubeProvider.tsx'
+import SearchHeader from '@/components/SearchHeader.tsx'
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient()
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         </QueryClientProvider>
       </YoutubeApiProvider>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

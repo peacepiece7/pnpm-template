@@ -1,74 +1,74 @@
 export interface Related {
-  kind: string;
-  etag: string;
-  nextPageToken: string;
-  regionCode: string;
-  pageInfo: PageInfo;
-  items: Item[];
+  kind: string
+  etag: string
+  nextPageToken: string
+  regionCode: string
+  pageInfo: PageInfo
+  items: Item[]
 }
 
 interface PageInfo {
-  totalResults: number;
-  resultsPerPage: number;
+  totalResults: number
+  resultsPerPage: number
 }
 
 interface Item {
-  kind: string;
-  etag: string;
-  id: Id;
-  snippet: Snippet;
+  kind: string
+  etag: string
+  id: Id
+  snippet: Snippet
 }
 
 interface Id {
-  kind: string;
-  videoId: string;
+  kind: string
+  videoId: string
 }
 
 interface Snippet {
-  publishedAt: string;
-  channelId: string;
-  title: string;
-  description: string;
-  thumbnails: Thumbnails;
-  channelTitle: string;
-  liveBroadcastContent: string;
-  publishTime: string;
+  publishedAt: string
+  channelId: string
+  title: string
+  description: string
+  thumbnails: Thumbnails
+  channelTitle: string
+  liveBroadcastContent: string
+  publishTime: string
 }
 
 interface Thumbnails {
-  default: Default;
-  medium: Medium;
-  high: High;
-  standard?: Standard;
-  maxres?: Maxres;
+  default: Default
+  medium: Medium
+  high: High
+  standard?: Standard
+  maxres?: Maxres
 }
 
 interface Default {
-  url: string;
-  width: number;
-  height: number;
+  url: string
+  width: number
+  height: number
 }
 
 interface Medium {
-  url: string;
-  width: number;
-  height: number;
+  url: string
+  width: number
+  height: number
 }
 
 interface High {
-  url: string;
-  width: number;
-  height: number;
+  url: string
+  width: number
+  height: number
 }
 
 interface Standard {
-  url: string;
-  width: number;
-  height: number;
+  url: string
+  width: number
+  height: number
 }
 
 interface Maxres {
-  url: string;
-  width: number;
-  height: number;
+  url: string
+  width: number
+  height: number
 }
