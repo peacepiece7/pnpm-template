@@ -15,11 +15,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.16",
     "vite": "^5.0.0",
     "vite-tsconfig-paths": "^4.2.2"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^6.1.5",
-    "timeago.js": "^4.0.2"
   }
 }

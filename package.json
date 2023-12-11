@@ -24,6 +24,7 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tanstack/react-query": "^5.13.4",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
@@ -47,9 +48,12 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-preview": "^0.3.1",
     "lint-staged": "^15.2.0",
+    "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "react-icons": "^4.12.0",
     "react-test-renderer": "^18.2.0",
+    "tailwindcss": "^3.3.6",
+    "timeago.js": "^4.0.2",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   },
