@@ -36,3 +36,4 @@ cypress/videos
 
 # Jest
 __snapshots__/
+coverage/
